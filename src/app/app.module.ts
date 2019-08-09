@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { DishService } from './services/dish.service';
 import { LeaderService } from './services/leader.service';
+import { PromotionService } from './services/promotion.service';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
@@ -42,7 +43,7 @@ import { AppRoutingModule } from './app-routing/app-routing.module';
     FlexLayoutModule,
     AppRoutingModule
   ],
-  providers: [DishService, LeaderService],
+  providers: [DishService, LeaderService, PromotionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

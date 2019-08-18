@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { DishService } from './services/dish.service';
 import { LeaderService } from './services/leader.service';
 import { PromotionService } from './services/promotion.service';
+import { FeedbackService } from './services/feedback.service';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { DishdetailComponent } from './dishdetail/dishdetail.component';
@@ -71,7 +72,7 @@ import { HighlightDirective } from './directives/highlight.directive';
     MatProgressSpinnerModule,
     FormsModule
   ],
-  providers: [DishService, LeaderService, PromotionService, ProcessHTTPMsgService, {provide: 'BaseURL', useValue: baseURL}],
+  providers: [DishService, LeaderService, PromotionService, ProcessHTTPMsgService, FeedbackService, {provide: 'BaseURL', useValue: baseURL}],
   entryComponents: [
     LoginComponent
   ],
